@@ -3,5 +3,23 @@
     "express": "^4.17.1",
     "hbs": "^4.1.2",
     "request": "^2.88.2"
-  }
+  },
+  "name": "weather-app",
+  "description": "weather report app",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start":"node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datthaprasad/weather-App.git"
+  },
+  "author": "Dattha Prasad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/datthaprasad/weather-App/issues"
+  },
+  "homepage": "https://github.com/datthaprasad/weather-App#readme"
 }

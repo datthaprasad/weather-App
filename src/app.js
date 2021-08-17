@@ -5,6 +5,7 @@ const geocode = require('./utils/geocode');
 const forecast=require('./utils/forecast')
 
 const app=express();
+const port=process.env.PORT || 5000;
 
 app.use(express.static(__dirname+'/../public'))
 
@@ -46,4 +47,6 @@ hbs.registerPartials(__dirname+'/../templates/partial')
      res.status(404).send('Page Not Found')
  })
 
-app.listen(5000);
+app.listen(port,()=>{
+    console.log(port+" is activated");
+});
