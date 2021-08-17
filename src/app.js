@@ -13,6 +13,9 @@ app.set('view engine','hbs');
 app.set('views',__dirname+'/../templates/views')
 hbs.registerPartials(__dirname+'/../templates/partial')
 
+app.get('/home',(req,res)=>{
+    res.render('index')
+})
 
 
  app.get('/weather',(req,res)=>{
